@@ -1,1 +1,394 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="utf-8"/><meta name="Cache-Control" content="private"><title>嘟嘟商学院</title><link rel="shortcut icon" href="./favicon.ico"><script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t.default=i.flex=function(e,t,a){var n=t||100,r=a||1,o=i.document,d=navigator.userAgent,l=d.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),p=d.match(/U3\/((\d+|\.){5,})/i),c=p&&parseInt(p[1].split(".").join(""),10)>=80,s=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),u=i.devicePixelRatio||1;s||l&&l[1]>534||c||(u=1);var m=e?1:1/u,v=o.querySelector('meta[name="viewport"]');v||((v=o.createElement("meta")).setAttribute("name","viewport"),o.head.appendChild(v)),v.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+m+",maximum-scale="+m+",minimum-scale="+m),o.documentElement.style.fontSize=e?"50px":n/2*u*r+"px"},e.exports=t.default}]),flex(!1,100,1)</script><script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script><script>"addEventListener"in document&&document.addEventListener("DOMContentLoaded",function(){FastClick.attach(document.body)},!1),window.Promise||document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"><\/script>')</script><script src="https://cdn.bootcss.com/moment.js/2.17.1/moment.min.js"></script><script src="https://cdn.bootcss.com/moment.js/2.17.1/locale/zh-cn.js"></script><script src="https://cdn.bootcss.com/node-uuid/1.4.8/uuid.min.js"></script><script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script></head><body><div id="app"></div><script type="text/javascript" src="vendor.min.js?50916f4d9cd73d36736d"></script><script type="text/javascript" src="bundle.50916.js?50916f4d9cd73d36736d"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>嘟嘟商学院2.0版本全新上线！一对一教你发大财！</title>
+
+    <script>!function (e) {
+        function t (a) {
+            if (i[a]) return i[a].exports
+            var n = i[a] = {exports: {}, id: a, loaded: !1}
+            return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports
+        }
+
+        var i = {}
+        return t.m = e, t.c = i, t.p = '', t(0)
+    }([function (e, t) {
+        'use strict'
+        Object.defineProperty(t, '__esModule', {value: !0})
+        var i = window
+        t['default'] = i.flex = function (e, t) {
+            var a = e || 100, n = t || 1, r = i.document, o = navigator.userAgent,
+                d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i), l = o.match(/U3\/((\d+|\.){5,})/i),
+                c = l && parseInt(l[1].split('.').join(''), 10) >= 80,
+                p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi), s = i.devicePixelRatio || 1
+            p || d && d[1] > 534 || c || (s = 1)
+            var u = 1 / s, m = r.querySelector('meta[name="viewport"]')
+            m || (m = r.createElement('meta'), m.setAttribute('name', 'viewport'), r.head.appendChild(m)), m.setAttribute('content', 'width=device-width,user-scalable=no,initial-scale=' + u + ',maximum-scale=' + u + ',minimum-scale=' + u)
+        }, e.exports = t['default']
+    }])
+    flex(100, 1)</script>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 在X5新内核Blink中，在排版页面的时候，会主动对字体进行放大，会检测页面中的主字体，当某一块字体在我们的判定规则中，认为字号较小，并且是页面中的主要字体，就会采取主动放大的操作。然而这不是我们想要的，可以采取给最大高度解决 */
+            max-height: 100000px;
+        }
+
+        *:before, *:after {
+            box-sizing: border-box;
+            max-height: 100000px;
+        }
+
+        *, *:before, *:after {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, textarea, td {
+            border: 0 none;
+            font-size: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+            vertical-align: baseline;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+
+        em, strong {
+            font-style: normal;
+        }
+
+        ul, ol, li {
+            list-style: none;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f2f2f2;
+            font-size: 0.24rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #box {
+            background: #fff;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #dudupost {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <div style="padding: 20px; background: red">
+        <button id="btnDefault" style="font-size: 28px; padding: 20px; margin-right: 20px;">生成默认canvas</button>
+        <button id="btnCustom" style="font-size: 28px; padding: 20px; margin-right: 20px">生成自定义canvas</button>
+    </div>
+    <canvas id="dudupost">Your browser does not support the canvas element.</canvas>
+    <button id="btn" style="font-size: 28px; padding: 20px;">生成海报图片</button>
+</div>
+<script>
+    // 默认海报创建的配置
+    const defaultConfig = {
+        platformName: '嘟嘟微生活',
+        banner: 'http://placekitten.com/g/640/300',
+        title: '19.9限量抢购原价120元大和春火锅精品套餐，手慢则无',
+        oldPrice: "30",
+        nowPrice: "28.88",
+        vipPrice: "19.99",
+        overtime: '2017-12-03',
+        codeUrl: 'http://public.duduapp.net/dolife/static/images/code.png'
+    }
+
+    // 默认海报创建
+    class DefaultCreatePost {
+        constructor (config) {
+            this.platformName = config.platformName
+            this.banner = config.banner
+            this.title = config.title
+            this.oldPrice = config.oldPrice
+            this.nowPrice = config.nowPrice
+            this.vipPrice = config.vipPrice
+            this.overtime = config.overtime
+            this.codeUrl = config.codeUrl
+
+            this.getTextLength = this.getTextLength.bind(this)
+            this.cutString = this.cutString.bind(this)
+            this.myDrawText = this.myDrawText.bind(this)
+            this.drawPost = this.drawPost.bind(this)
+        }
+
+        // 计算字符串的字节数
+        getTextLength (str) {
+            let len = str.length, trueLen = 0
+            for (let i = 0; i < len; i++) {
+                if (str.charCodeAt(i) > 128) {
+                    trueLen += 2
+                } else {
+                    trueLen += 1
+                }
+            }
+            return trueLen
+        }
+
+        // 按字节长度截取字符串，返回substr截取位置
+        cutString (str, leng) {
+            let len = str.length, tlen = len, nlen = 0
+            for (let x = 0; x < len; x++) {
+                if (str.charCodeAt(x) > 128) {
+                    if (nlen + 2 < leng) {
+                        nlen += 2
+                    } else {
+                        tlen = x
+                        break
+                    }
+                } else {
+                    if (nlen + 1 < leng) {
+                        nlen += 1
+                    } else {
+                        tlen = x
+                        break
+                    }
+                }
+            }
+            return tlen
+        };
+
+        myDrawText (ctx, font, color, align, x, y, text, maxLen) {
+            ctx.font = font
+            ctx.fillStyle = color
+            ctx.textAlign = align
+            ctx.fillText(text, x, y, maxLen)
+        };
+
+        drawPost () {
+            const DPR = window.devicePixelRatio || 1
+            const box = document.getElementById('box')
+            const canvas = document.getElementById('dudupost')
+            const ctx = canvas.getContext('2d')
+            // 最外层宽度
+            const w = box.offsetWidth
+            // 最大文本宽度
+            const textMaxWidth = w - 30 * DPR * 2
+
+            // 计算总体高度
+            // 平台标题高度
+            let h1 = 35 * DPR;
+            // banner 高度
+            let h2 = 0.426 * w;
+            // 抢购标题高度
+            let h3 = Math.ceil(this.getTextLength(this.title) * 7 * DPR / textMaxWidth) * 26 * DPR + 16 * DPR
+            // 价位背景
+            let h4 = 48 * DPR;
+            // 底部高度
+            let h5 = 70 * DPR + w * 0.4969;
+            let h = Math.ceil(h1 + h2 + h3 + h4 + h5)
+
+            canvas.width = w
+            canvas.height = h
+
+            // 画整体背景
+            ctx.fillStyle = '#fff'
+            ctx.fillRect(0, 0, w, h)
+
+            // 写入title文本
+            this.myDrawText(ctx, `bold ${15 * DPR}px 微软雅黑`, '#333', 'center', w / 2, 23 * DPR, this.platformName)
+
+            // 填充banner
+            let banner = new Image()
+            banner.crossOrigin = 'anonymous'
+            banner.src = this.banner
+            banner.onload = function () {
+                ctx.drawImage(banner, 0, 35 * DPR, w, h2)
+            }
+
+            // 填充标题
+            let title = this.title;
+            let cutIndex = this.cutString(this.title, textMaxWidth/(7 * DPR));
+            for (let i = 1; this.getTextLength(title) > 1; i++) {
+                this.myDrawText(ctx, `bold ${14 * DPR}px 微软雅黑`, "#333", "center", w / 2, h1 + h2 + 26 * i * DPR, title.substr(0, cutIndex).trim())
+                title = title.substr(cutIndex)
+            }
+
+            // 价位背景
+            ctx.fillStyle = '#f0f0f0'
+            ctx.fillRect(0, h1 + h2 + h3, w, h4)
+            // 判断是否有会员价
+            if (this.vipPrice) {
+                ctx.strokeStyle = '#ddd'
+                ctx.beginPath();
+                ctx.moveTo(w / 2, h1 + h2 + h3 + 10 * DPR);
+                ctx.lineWidth = 1;
+                ctx.lineCap = "round";
+                ctx.lineTo(w / 2, h1 + h2 + h3 + h4 - 10 * DPR);
+                ctx.stroke();
+                // 原价
+                this.myDrawText(ctx, `bold ${13 * DPR}px 微软雅黑`, "#333", "left", 30 * DPR, h1 + h2 + h3 + 20 * DPR, "原价￥")
+                this.myDrawText(ctx, `bold ${13 * DPR}px 微软雅黑`, "#ff4622", "left", 68 * DPR, h1 + h2 + h3 + 20 * DPR, this.oldPrice)
+                // 抢购价
+                this.myDrawText(ctx, `bold ${13 * DPR}px 微软雅黑`, "#333", "left", 30 * DPR, h1 + h2 + h3 + 37 * DPR, "抢购价￥")
+                this.myDrawText(ctx, `bold ${23 * DPR}px 微软雅黑`, "#ff4622", "left", 85 * DPR, h1 + h2 + h3 + 37 * DPR, this.nowPrice)
+                // 会员价
+                // 会员价的长度
+                let vipLen = this.getTextLength(this.vipPrice) * 10 * DPR + 5 * DPR
+                this.myDrawText(ctx, `bold ${13 * DPR}px 微软雅黑`, "#333", "right", w - 30 * DPR - vipLen, h1 + h2 + h3 + 37 * DPR, "会员价￥")
+                this.myDrawText(ctx, `bold ${20 * DPR}px 微软雅黑`, "#ff4622", "right", w - 30 * DPR, h1 + h2 + h3 + 37 * DPR, this.vipPrice)
+            } else {
+                // 抢购价长度
+                let vipLen = this.getTextLength(this.nowPrice) * 13 * DPR
+                // 原价
+                this.myDrawText(ctx, `bold ${13 * DPR}px 微软雅黑`, "#333", "left", w / 2 - 56 * DPR, h1 + h2 + h3 + 20 * DPR, "原价￥")
+                this.myDrawText(ctx, `bold ${13 * DPR}px 微软雅黑`, "#ff4622", "left", w / 2 - 18 * DPR, h1 + h2 + h3 + 20 * DPR, this.oldPrice)
+                // 抢购价
+                this.myDrawText(ctx, `bold ${13 * DPR}px 微软雅黑`, "#333", "center", w / 2 - 13 * 4 * DPR / 2 - 5 * DPR, h1 + h2 + h3 + 37 * DPR, "抢购价￥")
+                this.myDrawText(ctx, `bold ${23 * DPR}px 微软雅黑`, "#ff4622", "center", w / 2 + vipLen / 2 + 5 * DPR, h1 + h2 + h3 + 37 * DPR, this.nowPrice)
+            }
+
+            // 结束日期背景线条
+            ctx.strokeStyle = '#999'
+            ctx.beginPath();
+            ctx.moveTo(w / 2 - 109 * DPR, h1 + h2 + h3 + h4 + 24 * DPR);
+            ctx.lineWidth = 1;
+            ctx.lineCap = "round";
+            ctx.lineTo(w / 2 + 109 * DPR, h1 + h2 + h3 + h4 + 24 * DPR);
+            ctx.stroke();
+
+            // 结束日期背景
+            ctx.fillStyle = '#fff'
+            ctx.fillRect(w / 2 - 74 * DPR, h1 + h2 + h3 + h4 + 10 * DPR, 148 * DPR, 25 * DPR)
+
+            // 日期文字
+            const overTimeText = "抢购结束日期：" + this.overtime
+            this.myDrawText(ctx, `${11 * DPR}px 微软雅黑`, "#333", "center", w / 2, h1 + h2 + h3 + h4 + 27 * DPR, overTimeText)
+
+            // http://public.duduapp.net/dolife/static/images/postBg.png
+            // 填充二维码背景
+            let codeBg = new Image()
+            codeBg.crossOrigin = 'anonymous'
+            codeBg.src = "http://public.duduapp.net/dolife/static/images/postBg.png"
+
+            const self = this
+            codeBg.onload = function () {
+                ctx.drawImage(codeBg, 0, h1 + h2 + h3 + h4 + 35 * DPR, w, w * 0.4969)
+
+                // 填充二维码
+                const that = self;
+                let code = new Image()
+                code.crossOrigin = 'anonymous'
+                code.src = that.codeUrl
+                code.onload = function () {
+                    ctx.drawImage(code, 0.1 * w, h1 + h2 + h3 + h4 + 35 * DPR + w * 0.06, 0.359375 * w, 0.359375 * w)
+                }
+            }
+
+            // 底部文字
+            const tip = "长按识别或扫描二维码抢购此商品"
+            this.myDrawText(ctx, `${11 * DPR}px 微软雅黑`, "#999", "center", w / 2, h - 25 * DPR, tip)
+        }
+    }
+
+
+
+    // 自定义海报创建的配置
+    // 自定义海报是在 750 宽度下预览的！
+    const customConfig = {
+        postUrl: 'https://public.duduapp.net/college/static/vbg.png',
+        postHeight: 1080,
+        codeUrl: 'http://public.duduapp.net/dolife/static/images/code.png',
+        codeWidth: 200, // 二维码默认是正方形
+        codeTop: 500,
+        codeLeft: 200
+    }
+
+    // 自定义海报创建
+    class CustomCreatePostOther {
+        constructor (config) {
+            this.postUrl = config.postUrl
+            this.postHeight = config.postHeight
+            this.codeUrl = config.codeUrl
+            this.codeWidth = config.codeWidth
+            this.codeTop = config.codeTop
+            this.codeLeft = config.codeLeft
+
+            this.drawPost = this.drawPost.bind(this)
+        }
+
+        drawPost () {
+            const box = document.getElementById('box')
+            const canvas = document.getElementById('dudupost')
+            const ctx = canvas.getContext('2d')
+            // 最外层宽度
+            const w = box.offsetWidth
+            const h = w * this.postHeight / 750
+
+            canvas.width = w
+            canvas.height = h
+
+            // 填充 bg
+            let bg = new Image()
+            bg.crossOrigin = 'anonymous'
+            bg.src = this.postUrl
+
+            const self = this
+            bg.onload = function () {
+                ctx.drawImage(bg, 0, 0, w, h)
+
+                // 填充二维码
+                const that = self;
+                let codeImg = new Image()
+                codeImg.crossOrigin = 'anonymous'
+                codeImg.src = that.codeUrl
+                const x = w * that.codeLeft / 750
+                const y = h * that.codeTop / 750
+                const codeSize = w * that.codeWidth / 750;
+                codeImg.onload = function () {
+                    ctx.drawImage(codeImg, x, y, codeSize, codeSize)
+                }
+            }
+
+        }
+    }
+
+
+    // 默认创建海报实例
+    const myDefault = new DefaultCreatePost(defaultConfig)
+    myDefault.drawPost()
+
+    // 生成图片
+    const btn = document.getElementById("btn")
+    const btnDefault = document.getElementById("btnDefault")
+    const btnCustom = document.getElementById("btnCustom")
+    btn.addEventListener("click", function(){
+        const parent = document.getElementById("box")
+        const canvas = document.getElementById("dudupost")
+        const url = canvas.toDataURL();
+        const newImg = document.createElement("img")
+        newImg.setAttribute("src", url)
+        parent.appendChild(newImg)
+    })
+    btnDefault.addEventListener("click", function () {
+        // 默认创建海报实例
+        const myDefault = new DefaultCreatePost(defaultConfig)
+        myDefault.drawPost()
+    })
+    btnCustom.addEventListener("click", function () {
+        // 自定义创建海报示例
+        const myCustom = new CustomCreatePostOther(customConfig)
+        myCustom.drawPost()
+    })
+
+</script>
+</body>
+</html>
